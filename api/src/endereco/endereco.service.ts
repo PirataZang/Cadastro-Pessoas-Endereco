@@ -12,8 +12,8 @@ export class EnderecoService {
     return this.Prisma.endereco.create({data: createEnderecoDto});
   }
 
-  findAll() {
-    return this.Prisma.endereco.findMany();
+  findAll(id) {
+    return this.Prisma.endereco.findMany({where: {pes_id: id}});
   }
 
   findOne(id: number) {

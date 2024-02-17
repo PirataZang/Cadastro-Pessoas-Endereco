@@ -12,7 +12,7 @@ export declare class EnderecoController {
         end_cidade: string;
         pes_id: number;
     }, never, import("@prisma/client/runtime/library").DefaultArgs>;
-    findAll(): Prisma.PrismaPromise<{
+    findAll(pes_id: string): Prisma.PrismaPromise<{
         end_id: number;
         end_rua: string;
         end_bairro: string;

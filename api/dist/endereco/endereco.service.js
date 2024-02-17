@@ -19,8 +19,8 @@ let EnderecoService = class EnderecoService {
     create(createEnderecoDto) {
         return this.Prisma.endereco.create({ data: createEnderecoDto });
     }
-    findAll() {
-        return this.Prisma.endereco.findMany();
+    findAll(id) {
+        return this.Prisma.endereco.findMany({ where: { pes_id: id } });
     }
     findOne(id) {
         return this.Prisma.endereco.findUnique({ where: { end_id: Number(id) } });

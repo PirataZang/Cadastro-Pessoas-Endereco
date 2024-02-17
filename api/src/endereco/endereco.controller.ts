@@ -13,9 +13,9 @@ export class EnderecoController {
     return this.enderecoService.create(createEnderecoDto);
   }
 
-  @Get()
-  findAll() {
-    return this.enderecoService.findAll();
+  @Get(':pes_id')
+  findAll(@Param('pes_id') pes_id: string) {
+    return this.enderecoService.findAll(pes_id);
   }
 
   @Get(':id')

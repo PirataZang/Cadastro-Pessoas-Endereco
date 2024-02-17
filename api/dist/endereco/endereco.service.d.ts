@@ -9,7 +9,7 @@ export declare class EnderecoService {
         end_cidade: string;
         pes_id: number;
     }, never, import("@prisma/client/runtime/library").DefaultArgs>;
-    findAll(): import(".prisma/client").Prisma.PrismaPromise<{
+    findAll(id: any): import(".prisma/client").Prisma.PrismaPromise<{
         end_id: number;
         end_rua: string;
         end_bairro: string;

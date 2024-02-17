@@ -24,8 +24,8 @@ let EnderecoController = class EnderecoController {
     create(createEnderecoDto) {
         return this.enderecoService.create(createEnderecoDto);
     }
-    findAll() {
-        return this.enderecoService.findAll();
+    findAll(pes_id) {
+        return this.enderecoService.findAll(pes_id);
     }
     findOne(id) {
         return this.enderecoService.findOne(+id);
@@ -46,9 +46,10 @@ __decorate([
     __metadata("design:returntype", void 0)
 ], EnderecoController.prototype, "create", null);
 __decorate([
-    (0, common_1.Get)(),
+    (0, common_1.Get)(':pes_id'),
+    __param(0, (0, common_1.Param)('pes_id')),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", []),
+    __metadata("design:paramtypes", [String]),
     __metadata("design:returntype", void 0)
 ], EnderecoController.prototype, "findAll", null);
 __decorate([
