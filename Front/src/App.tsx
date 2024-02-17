@@ -1,10 +1,10 @@
 import './App.css';
-import BuscaPessoaUnica from './components/BuscaPessoaUnica';
+import PaginaInicial from './components/routes/PaginaInicial';
 // App.js
 const App = () => {
   return (
     <div>
-      <BuscaPessoaUnica/>
+      <PaginaInicial/>
     </div>
   );
 };

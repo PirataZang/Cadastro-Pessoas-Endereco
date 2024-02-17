@@ -2,14 +2,16 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
-import BuscaPessoaUnica from './components/BuscaPessoaUnica'
+import BuscaPessoaUnica from './components/BuscaPessoa/BuscaPessoaUnica'
 import CadastrarPessoa from './components/CadastraPessoa/CadastrarPessoa'
+import PaginaInicial from './components/routes/PaginaInicial'
+
 
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <BuscaPessoaUnica/>,
+    element: <PaginaInicial/>,
     errorElement: <div>Não Foi Encontrado essa Pagina {':('}</div>
   },
   {
@@ -17,7 +19,8 @@ const router = createBrowserRouter([
     element: <CadastrarPessoa/>
   },
   {
-    path: '/CreateEndereco',
+    path: '/BuscaPessoaUnica',
+    element: <BuscaPessoaUnica/>
   }
 ])
 
