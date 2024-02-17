@@ -20,8 +20,8 @@ export default function BuscaPessoaUnica() {
 
         // Busca pessoa pelo ID
         try {
-            const responseId = await axios.get(`http://localhost:5000/pessoa/?id=${id}`);
-            setPessoa(responseId.data[parseInt(id) - 1]);
+            const responseId = await axios.get(`http://localhost:5000/pessoa/${id}`);
+            setPessoa(responseId.data);
 
             console.log('Dados adicionados com sucesso:');
         } catch (error) {

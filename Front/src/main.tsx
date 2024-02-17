@@ -15,6 +15,9 @@ const router = createBrowserRouter([
   {
     path: '/CadastrarPessoa',
     element: <CadastrarPessoa/>
+  },
+  {
+    path: '/CreateEndereco',
   }
 ])
 
