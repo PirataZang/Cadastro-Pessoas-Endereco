@@ -11,6 +11,9 @@ const PaginaInicial = () => {
             <button>
                 <Link to={'/BuscaPessoaUnica'}>Buscar Pessoa</Link>
             </button>
+            <button>
+                <Link to={'/CadastrarEndereco'}>Cadastrar Novo Endereço</Link>
+            </button>
         </div>
     )
 }

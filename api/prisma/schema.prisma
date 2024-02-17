@@ -11,11 +11,12 @@ datasource db {
 }
 
 model Pessoa {
-  pes_id           Int        @id @default(autoincrement())
-  pes_nome         String
-  pes_sexo         String
-  pes_estado_civil String
-  Endereco         Endereco[]
+  pes_id              Int        @id @default(autoincrement())
+  pes_nome            String
+  pes_sexo            String
+  pes_estado_civil    String
+  pes_data_nascimento DateTime
+  Endereco            Endereco[]
 }
 
 model Endereco {

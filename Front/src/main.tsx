@@ -5,6 +5,7 @@ import './index.css'
 import BuscaPessoaUnica from './components/BuscaPessoa/BuscaPessoaUnica'
 import CadastrarPessoa from './components/CadastraPessoa/CadastrarPessoa'
 import PaginaInicial from './components/routes/PaginaInicial'
+import CadastrarEndereco from './components/Cadastrar Endereco/CadastrarEndereco'
 
 
 
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: '/BuscaPessoaUnica',
     element: <BuscaPessoaUnica/>
+  },
+  {
+    path: '/CadastrarEndereco',
+    element: <CadastrarEndereco/>
   }
 ])
 
