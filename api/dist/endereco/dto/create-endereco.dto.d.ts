@@ -1,10 +1,10 @@
 export declare class CreateEnderecoDto {
-    end_rua: String;
-    end_bairro: String;
-    end_cidade: String;
-    Pessoa: {
-        where: {
-            pes_id: Number;
+    end_rua: string;
+    end_bairro: string;
+    end_cidade: string;
+    pessoa: {
+        connect: {
+            pes_id: number;
         };
     };
 }
