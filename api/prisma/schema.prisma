@@ -15,7 +15,7 @@ model Pessoa {
   pes_nome            String
   pes_sexo            String
   pes_estado_civil    String
-  pes_data_nascimento DateTime
+  pes_data_nascimento String
   Endereco            Endereco[]
 }
 

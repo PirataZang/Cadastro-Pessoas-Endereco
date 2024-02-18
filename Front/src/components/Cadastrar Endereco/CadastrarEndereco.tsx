@@ -55,6 +55,8 @@ const CadastrarEndereco = () => {
                 <input type="text" value={end_rua} onChange={(e) => setEnd_rua(e.target.value)} placeholder='Logradouro' className={style.Input} />
                 <button type='submit'>Cadastrar</button>
             </form>
+
+            <button><Link to={'/'}>Voltar para a Pagina Inicial</Link></button>
         </div>
     )
 }

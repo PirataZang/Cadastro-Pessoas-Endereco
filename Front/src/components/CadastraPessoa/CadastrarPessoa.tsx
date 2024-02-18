@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import Style from './CadastrarPessoa.module.css';
 
@@ -7,14 +7,16 @@ function CadastrarPessoa() {
     const [pes_nome, setNome] = useState('');
     const [pes_sexo, setSexo] = useState('');
     const [pes_estado_civil, setEstado_civil] = useState('');
-
+    const [pes_data_nascimento, setPes_data_nascimento] = useState('');
     const handleSubmit = async (e: any) => {
         e.preventDefault();
 
         try {
-            await axios.post('http://localhost:5000/pessoa/new', { pes_nome, pes_sexo, pes_estado_civil });
+            await axios.post('http://localhost:5000/pessoa/new', { pes_nome, pes_sexo, pes_estado_civil, pes_data_nascimento });
             console.log('Pessoa Cadastrada com Sucesso');
             alert('Pessoa Cadastrada com Sucesso');
+            setNome('');
+            setPes_data_nascimento('');
         }
         catch (error) {
             alert('Erro ao realizar post:');
@@ -50,6 +52,8 @@ function CadastrarPessoa() {
                     <option value="divorciado ">Divorciado</option>
                     <option value="viúvo">Viúvo</option>
                 </select>
+                <input type="date" name="dataNascimento" id="" onChange={(e) => setPes_data_nascimento(e.target.value)} className={Style.Input} />
+
                 <button type='submit'>Criar Pessoa</button>
             </form>
             <button><Link to={'/'}> Voltar para Pagina Buscar Pessoa Unica</Link></button>

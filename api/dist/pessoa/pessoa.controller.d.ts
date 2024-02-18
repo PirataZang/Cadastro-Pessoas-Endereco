@@ -9,29 +9,34 @@ export declare class PessoaController {
         pes_nome: string;
         pes_sexo: string;
         pes_estado_civil: string;
+        pes_data_nascimento: string;
     }>;
     findAll(): import(".prisma/client").Prisma.PrismaPromise<{
         pes_id: number;
         pes_nome: string;
         pes_sexo: string;
         pes_estado_civil: string;
+        pes_data_nascimento: string;
     }[]>;
     findOne(id: string): import(".prisma/client").Prisma.Prisma__PessoaClient<{
         pes_id: number;
         pes_nome: string;
         pes_sexo: string;
         pes_estado_civil: string;
+        pes_data_nascimento: string;
     }, null, import("@prisma/client/runtime/library").DefaultArgs>;
     update(id: string, updatePessoaDto: UpdatePessoaDto): import(".prisma/client").Prisma.Prisma__PessoaClient<{
         pes_id: number;
         pes_nome: string;
         pes_sexo: string;
         pes_estado_civil: string;
+        pes_data_nascimento: string;
     }, never, import("@prisma/client/runtime/library").DefaultArgs>;
     remove(id: string): import(".prisma/client").Prisma.Prisma__PessoaClient<{
         pes_id: number;
         pes_nome: string;
         pes_sexo: string;
         pes_estado_civil: string;
+        pes_data_nascimento: string;
     }, never, import("@prisma/client/runtime/library").DefaultArgs>;
 }
