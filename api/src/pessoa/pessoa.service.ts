@@ -16,6 +16,10 @@ export class PessoaService {
     return this.prisma.pessoa.findMany();
   }
 
+  getEnderecoPessoa(idPessoa: Number) {
+    return this.prisma.endereco.findMany({where: {pes_id: Number(idPessoa)}})
+  }
+
   findOne(id: number) {
     return this.prisma.pessoa.findUnique({where: {pes_id: Number(id)}});
   }

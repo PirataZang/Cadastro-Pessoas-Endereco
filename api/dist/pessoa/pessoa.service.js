@@ -23,6 +23,9 @@ let PessoaService = class PessoaService {
     findAll() {
         return this.prisma.pessoa.findMany();
     }
+    getEnderecoPessoa(idPessoa) {
+        return this.prisma.endereco.findMany({ where: { pes_id: Number(idPessoa) } });
+    }
     findOne(id) {
         return this.prisma.pessoa.findUnique({ where: { pes_id: Number(id) } });
     }

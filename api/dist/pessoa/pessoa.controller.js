@@ -24,6 +24,9 @@ let PessoaController = class PessoaController {
     async create(createPessoaDto) {
         return this.pessoaService.create(createPessoaDto);
     }
+    getEnderecoPessoa(idPessoa) {
+        return this.pessoaService.getEnderecoPessoa(idPessoa);
+    }
     findAll() {
         return this.pessoaService.findAll();
     }
@@ -45,6 +48,13 @@ __decorate([
     __metadata("design:paramtypes", [create_pessoa_dto_1.CreatePessoaDto]),
     __metadata("design:returntype", Promise)
 ], PessoaController.prototype, "create", null);
+__decorate([
+    (0, common_1.Get)('Endereco/:id'),
+    __param(0, (0, common_1.Param)('id')),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Number]),
+    __metadata("design:returntype", void 0)
+], PessoaController.prototype, "getEnderecoPessoa", null);
 __decorate([
     (0, common_1.Get)(),
     __metadata("design:type", Function),

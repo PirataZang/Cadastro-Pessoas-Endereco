@@ -6,6 +6,8 @@ import BuscaPessoaUnica from './components/BuscaPessoa/BuscaPessoaUnica'
 import CadastrarPessoa from './components/CadastraPessoa/CadastrarPessoa'
 import PaginaInicial from './components/routes/PaginaInicial'
 import CadastrarEndereco from './components/Cadastrar Endereco/CadastrarEndereco'
+import BuscaEnderecoPessoa from './components/BuscaEnderecoPessoa/BuscaEnderecoPessoa'
+
 
 
 
@@ -22,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: '/BuscaPessoaUnica',
     element: <BuscaPessoaUnica/>
+  },
+  {
+    path: '/BuscaEnderecoPessoa',
+    element: <BuscaEnderecoPessoa/>
   },
   {
     path: '/CadastrarEndereco',

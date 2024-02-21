@@ -12,6 +12,11 @@ export class PessoaController {
     return this.pessoaService.create(createPessoaDto);
   }
 
+  @Get('Endereco/:id')
+    getEnderecoPessoa(@Param('id') idPessoa: number){
+      return this.pessoaService.getEnderecoPessoa(idPessoa);
+  }
+
   @Get()
   findAll() {
     return this.pessoaService.findAll();

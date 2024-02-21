@@ -14,6 +14,9 @@ const PaginaInicial = () => {
             <button>
                 <Link to={'/CadastrarEndereco'}>Cadastrar Novo Endereço</Link>
             </button>
+            <button>
+                <Link to={'/BuscaEnderecoPessoa'}>Buscar Todos os Endereços das Pessoas</Link>
+            </button>
         </div>
     )
 }

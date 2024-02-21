@@ -16,6 +16,13 @@ export declare class PessoaService {
         pes_estado_civil: string;
         pes_data_nascimento: string;
     }[]>;
+    getEnderecoPessoa(idPessoa: Number): import(".prisma/client").Prisma.PrismaPromise<{
+        end_id: number;
+        end_rua: string;
+        end_bairro: string;
+        end_cidade: string;
+        pes_id: number;
+    }[]>;
     findOne(id: number): import(".prisma/client").Prisma.Prisma__PessoaClient<{
         pes_id: number;
         pes_nome: string;

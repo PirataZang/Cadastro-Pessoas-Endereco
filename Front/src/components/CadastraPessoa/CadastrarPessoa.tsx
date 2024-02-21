@@ -16,7 +16,6 @@ function CadastrarPessoa() {
             console.log('Pessoa Cadastrada com Sucesso');
             alert('Pessoa Cadastrada com Sucesso');
             setNome('');
-            setPes_data_nascimento('');
         }
         catch (error) {
             alert('Erro ao realizar post:');
@@ -32,6 +31,15 @@ function CadastrarPessoa() {
     const handleEstadoCivil = (e: any) => {
         setEstado_civil(e.target.value);
     }
+
+
+    useEffect(() => {
+        setNome('');
+        setSexo('');
+        setEstado_civil('');
+        setPes_data_nascimento('');
+    })
+
 
     return (
         <div>
