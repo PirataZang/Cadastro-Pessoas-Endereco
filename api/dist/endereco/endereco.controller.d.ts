@@ -10,6 +10,7 @@ export declare class EnderecoController {
         end_rua: string;
         end_bairro: string;
         end_cidade: string;
+        end_numero: number;
         pes_id: number;
     }, never, import("@prisma/client/runtime/library").DefaultArgs>;
     findAll(pes_id: string): Prisma.PrismaPromise<{
@@ -17,6 +18,7 @@ export declare class EnderecoController {
         end_rua: string;
         end_bairro: string;
         end_cidade: string;
+        end_numero: number;
         pes_id: number;
     }[]>;
     findOne(id: string): Prisma.Prisma__EnderecoClient<{
@@ -24,6 +26,7 @@ export declare class EnderecoController {
         end_rua: string;
         end_bairro: string;
         end_cidade: string;
+        end_numero: number;
         pes_id: number;
     }, null, import("@prisma/client/runtime/library").DefaultArgs>;
     update(id: string, updateEnderecoDto: UpdateEnderecoDto): Prisma.Prisma__EnderecoClient<{
@@ -31,6 +34,7 @@ export declare class EnderecoController {
         end_rua: string;
         end_bairro: string;
         end_cidade: string;
+        end_numero: number;
         pes_id: number;
     }, never, import("@prisma/client/runtime/library").DefaultArgs>;
     remove(id: string): Prisma.Prisma__EnderecoClient<{
@@ -38,6 +42,7 @@ export declare class EnderecoController {
         end_rua: string;
         end_bairro: string;
         end_cidade: string;
+        end_numero: number;
         pes_id: number;
     }, never, import("@prisma/client/runtime/library").DefaultArgs>;
 }

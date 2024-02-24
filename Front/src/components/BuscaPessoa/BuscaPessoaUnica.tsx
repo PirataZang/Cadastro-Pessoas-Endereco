@@ -59,7 +59,7 @@ export default function BuscaPessoaUnica() {
                 </div>
             )}
 
-            <button><Link to={'/CadastrarPessoa'}>Aceessar a Busca de Todas as Pessoas</Link></button>
+            <button><Link to={'/CadastrarPessoa'}>Cadastrar Nova pessoa</Link></button>
             <button><Link to={'/'}>Voltar para a Pagina Inicial</Link></button>
         </>
     );

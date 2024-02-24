@@ -24,6 +24,7 @@ model Endereco {
   end_rua    String
   end_bairro String
   end_cidade String
+  end_numero Int
   pes_id     Int
   Pessoa     Pessoa @relation(fields: [pes_id], references: [pes_id])
 }

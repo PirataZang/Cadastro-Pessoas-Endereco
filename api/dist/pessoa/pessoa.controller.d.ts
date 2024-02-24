@@ -16,6 +16,7 @@ export declare class PessoaController {
         end_rua: string;
         end_bairro: string;
         end_cidade: string;
+        end_numero: number;
         pes_id: number;
     }[]>;
     findAll(): import(".prisma/client").Prisma.PrismaPromise<{

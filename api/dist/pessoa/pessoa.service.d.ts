@@ -21,6 +21,7 @@ export declare class PessoaService {
         end_rua: string;
         end_bairro: string;
         end_cidade: string;
+        end_numero: number;
         pes_id: number;
     }[]>;
     findOne(id: number): import(".prisma/client").Prisma.Prisma__PessoaClient<{

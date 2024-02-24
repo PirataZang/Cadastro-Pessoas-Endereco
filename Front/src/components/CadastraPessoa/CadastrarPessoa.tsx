@@ -16,6 +16,9 @@ function CadastrarPessoa() {
             console.log('Pessoa Cadastrada com Sucesso');
             alert('Pessoa Cadastrada com Sucesso');
             setNome('');
+            setSexo('');
+            setEstado_civil('');
+            setPes_data_nascimento('');
         }
         catch (error) {
             alert('Erro ao realizar post:');
@@ -30,16 +33,7 @@ function CadastrarPessoa() {
 
     const handleEstadoCivil = (e: any) => {
         setEstado_civil(e.target.value);
-    }
-
-
-    useEffect(() => {
-        setNome('');
-        setSexo('');
-        setEstado_civil('');
-        setPes_data_nascimento('');
-    })
-
+    };
 
     return (
         <div>
@@ -60,8 +54,7 @@ function CadastrarPessoa() {
                     <option value="divorciado ">Divorciado</option>
                     <option value="viúvo">Viúvo</option>
                 </select>
-                <input type="date" name="dataNascimento" id="" onChange={(e) => setPes_data_nascimento(e.target.value)} className={Style.Input} />
-
+                <input type="date" name="dataNascimento" placeholder='dd-mm-yyyy' id="" onChange={(e) => setPes_data_nascimento((e.target.value))} className={Style.Input} />
                 <button type='submit'>Criar Pessoa</button>
             </form>
             <button><Link to={'/'}> Voltar para Pagina Buscar Pessoa Unica</Link></button>

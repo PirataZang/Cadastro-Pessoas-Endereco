@@ -22,8 +22,7 @@ function BuscaEnderecoPessoa() {
         try {
             const EnderecoPessoa = await axios.get(`http://localhost:5000/pessoa/endereco/${id}`);
             console.log('Dados retornados:', EnderecoPessoa.data);
-            setPessoaEndereco(EnderecoPessoa.data[id]);
-            console.log("Teste: ", PessoaEndereco);
+            setPessoaEndereco(EnderecoPessoa.data.end_id);
         } catch (error) {
             alert('Não foi possível encontrar o Endereço da pessoa');
         }
